@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+  }
+
+.aboutMe {
+    color: #c77561;
+    font-family: 'Courier New';
+    font-size: 1.3rem;
+    background-color: #eee6e2;
+    padding: 1rem;
+    width: 100%;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 28.125em) {
+    img {
+        width: 100%;
+    }
+}
