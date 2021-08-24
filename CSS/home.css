@@ -8,16 +8,30 @@ a {
 
 .aboutMe {
     color: #e89f91;
-    font-family: 'Courier New';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
     background-color: #fff7f3;
     padding: 1rem;
     width: 100%;
 }
 
+#contact {
+    width: 35px;
+    height: 35px; 
+}
+
 .pic {
     display: flex;
     justify-content: center;
+}
+
+#hs  {
+        float: left;    
+        margin: 30px 15px 0 0;
+    }
+
+#h1 {
+    color: #4a4a4a;
 }
 
 @media only screen and (max-width: 28.125em) {
