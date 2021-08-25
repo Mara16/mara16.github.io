@@ -3,21 +3,22 @@ body {
 }
 
 a {
+    color: #A4B0FF;
     text-decoration: none;
-  }
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #25395C;
+}
 
 .aboutMe {
     color: #e89f91;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
     background-color: #fff7f3;
     padding: 1rem;
     width: 100%;
-}
-
-#contact {
-    width: 35px;
-    height: 35px; 
 }
 
 .pic {
@@ -25,10 +26,24 @@ a {
     justify-content: center;
 }
 
-#hs  {
-        float: left;    
-        margin: 30px 15px 0 0;
-    }
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding-right: 1rem;
+}
+
+ul li:last-child {
+    padding-right: 0;
+}
+
+ul img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 #h1 {
     color: #4a4a4a;
