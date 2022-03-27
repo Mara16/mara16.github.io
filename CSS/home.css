@@ -4,10 +4,6 @@ body {
     color: #292a5e;
 }
 
-html {
-  height: 100vh;
-}
-
 .row {
   display: flex;
   height: 100vh;
@@ -77,6 +73,17 @@ ul img {
 .left {
     background-color: #efd4e7;
     text-align: right;
+  }
+
+  .right {
+    position: relative;
+  }
+
+  .footer-content {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
   }
 
 /* Clear floats after the columns */
