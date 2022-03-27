@@ -1,25 +1,37 @@
 body {
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #292a5e;
+}
+
+html {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  height: 100vh;
 }
 
 a {
-    color: #A4B0FF;
+    color: #6b6abc;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #25395C;
+    color: pink;
+    text-decoration: underline solid pink 3px;
 }
 
-.aboutMe {
+/*.aboutMe {
     color: #e89f91;
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
     background-color: #fff7f3;
     padding: 1rem;
     width: 100%;
-}
+}*/
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
@@ -54,8 +66,50 @@ ul img {
     color: #4a4a4a;
 }
 
-@media only screen and (max-width: 28.125em) {
-    img {
-        width: 100%;
+* {
+    box-sizing: border-box;
+  }
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+.left {
+    background-color: #efd4e7;
+    text-align: right;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: #efd4e7;
+    text-decoration: underline solid #efd4e7 3px;
+  }
+  
+  .topnav a.active {
+    color: #efd4e7;
+  }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
     }
-}
+  }
