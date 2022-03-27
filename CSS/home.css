@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Helvetica;
     color: #292a5e;
 }
 
@@ -20,18 +20,11 @@ a:hover {
     text-decoration: underline solid pink 3px;
 }
 
-/*.aboutMe {
-    color: #e89f91;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.3rem;
-    background-color: #fff7f3;
-    padding: 1rem;
-    width: 100%;
-}*/
-
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 3rem;
+
 }
 
 .pic {
@@ -43,14 +36,6 @@ ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-}
-
-ul li {
-    padding-right: 1rem;
-}
-
-ul li:last-child {
-    padding-right: 0;
 }
 
 ul img {
@@ -72,16 +57,30 @@ ul img {
   
 .left {
     background-color: #efd4e7;
+    position: relative;
     text-align: right;
+    padding: 1.2rem;
   }
 
   .right {
+    background-color: #fdfdf1;
     position: relative;
+    padding: 1.2rem;
   }
 
   .footer-content {
     bottom: 0;
     position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: space-evenly;
     text-align: center;
     width: 100%;
   }
