@@ -1,7 +1,100 @@
+a {
+  color: #6b6abc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00d2ee;
+  text-decoration: underline solid #fd7d78 3px;
+}
 body {
-    margin: 0;
-    font-family: Helvetica;
-    color: #292a5e;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #292a5e;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 2rem;
+
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+  
+.footer-content {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.github{
+  fill: green;
+}
+
+#h1 {
+  color: #4a4a4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #efdded;
+  position: relative;
+  text-align: right;
+  padding: 1.2rem;
+}
+
+.name {
+  color: #fd7d78;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.pic {
+  display: flex;
+  justify-content: center; 
+  padding: 1rem;
+  background-image: radial-gradient(rgb(87, 51, 51) 10%, transparent 11%),
+  radial-gradient(rgb(104, 18, 18) 10%, transparent 11%);
+  background-size: 10px 10px;
+  background-position: 0 0, 90px 90px;
+  background-repeat: repeat;
+}
+
+.pronounciation {
+  color: #b8b8b8;
+  font-style: italic;
+  font-size: .8rem;
+  padding-top: 0%;
+  margin:0;
+  border-collapse: collapse;
+}
+
+.right {
+  background-color: #fdfdf1;
+  position: relative;
+  padding: 1.2rem;
 }
 
 .row {
@@ -9,113 +102,47 @@ body {
   height: 100vh;
 }
 
-a {
-    color: #6b6abc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: pink;
-    text-decoration: underline solid pink 3px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 3rem;
-
-}
-
-.pic {
-    display: flex;
-    justify-content: center;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-}
-
-ul img {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-#h1 {
-    color: #4a4a4a;
-}
-
-* {
-    box-sizing: border-box;
-  }
-.column {
-    float: left;
-    padding: 10px;
-  }
-  
-.left {
-    background-color: #efd4e7;
-    position: relative;
-    text-align: right;
-    padding: 1.2rem;
-  }
-
-  .right {
-    background-color: #fdfdf1;
-    position: relative;
-    padding: 1.2rem;
-  }
-
-  .footer-content {
-    bottom: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .social {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
-  }
-
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .topnav {
-    overflow: hidden;
-  }
+.social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
+
+
+.topnav {
+  overflow: hidden;
+}
   
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
   
-  .topnav a:hover {
-    color: #efd4e7;
-    text-decoration: underline solid #efd4e7 3px;
-  }
+.topnav a:hover {
+  color: #00d2ee;
+  text-decoration: underline solid #fd7d78 3px;
+}
   
-  .topnav a.active {
-    color: #efd4e7;
-  }
+.topnav a.active {
+  color: #949494;
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
+  .column {
+    width: 100%;
   }
+}
