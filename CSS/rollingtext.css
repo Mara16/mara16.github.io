@@ -19,7 +19,7 @@
 	 height: 72px;
 	 text-decoration: none;
 	 overflow: hidden;
-	 color: #553d86;
+	 color: #E1DDEB;
 	 margin-top: 3rem;
 	 margin-bottom: 0;
 	}
@@ -27,7 +27,7 @@
 	 transform: translateY(-100%);
 }
  .rolling-text .block:last-child {
-	color: #E1DDEB;
+	color: #553d86;
 }
  .rolling-text .letter {
 	 display: inline-block;
