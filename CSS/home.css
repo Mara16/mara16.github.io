@@ -8,9 +8,14 @@ a:hover {
   color: #00d2ee;
   text-decoration: underline solid #fd7d78 3px;
 }
+
+audio::-webkit-media-controls-panel {
+  background-color: #C9C3D7;
+}
+
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Agrandir', sans-serif;
   color: #292a5e;
 }
 
@@ -21,6 +26,10 @@ h2, h3, h4, h5, h6 {
 
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 ul {
   display: flex;
   list-style-type: none;
@@ -28,8 +37,8 @@ ul {
 }
 
 ul img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .column {
@@ -58,10 +67,12 @@ ul img {
 }
 
 .left {
-  background-color: #efdded;
+  background-color: #fff;
   position: relative;
   text-align: right;
+  overflow-y: scroll;
   padding: 1.2rem;
+  width: 25%;
 }
 
 .name {
@@ -74,13 +85,17 @@ ul img {
 
 .pic {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   padding: 1rem;
   background-image: radial-gradient(rgb(87, 51, 51) 10%, transparent 11%),
   radial-gradient(rgb(104, 18, 18) 10%, transparent 11%);
   background-size: 10px 10px;
   background-position: 0 0, 90px 90px;
   background-repeat: repeat;
+}
+
+.pic img {
+  width: 50%;
 }
 
 .pronounciation {
@@ -93,9 +108,11 @@ ul img {
 }
 
 .right {
-  background-color: #fdfdf1;
+  background-color: #553d86;
+  color: #fff;
   position: relative;
   padding: 1.2rem;
+  width: 75%;
 }
 
 .row {
@@ -111,7 +128,6 @@ ul img {
 }
 
 .social {
-  position: absolute;
   bottom: 0;
   left: 0;
   justify-content: space-evenly;
@@ -144,7 +160,11 @@ ul img {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .left, .right {
     width: 100%;
+  }
+
+  .row {
+    display: block;
   }
 }
