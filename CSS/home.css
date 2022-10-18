@@ -30,11 +30,23 @@ p {
   line-height: 1.5rem;
 }
 
-ul {
+ul.news{
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.news li{
+  margin-bottom: .3rem;
+  font-family: 'Agrandir', sans-serif;
+}
+
+ul.social {
   display: flex;
   list-style-type: none;
   padding: 0;
 }
+
+
 
 ul img {
   width: 2rem;
