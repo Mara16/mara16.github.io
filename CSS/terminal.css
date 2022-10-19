@@ -26,25 +26,28 @@
   }
 
   .circle.red:hover::after {
-    content: 'X';
+    content: '\0078';
     color: #8d1b13;
     position: absolute;
     left: 25%;
+    bottom: 5%;
   }
 
   .circle.yellow:hover::after {
-    content: '--';
+    content: '\2578';
     color: #a8712a;
     position: absolute;
-    left: 25%;
+    right: 70%;
+    left: 33%;
+    bottom: 0%;
   }
 
   .circle.green:hover::after {
-    content: '\005E';
+    content: '\02D0';
     color: #296018;
     position: absolute;
-    left: 25%;
-    top: 5%;
+    right: 40%;
+    bottom: 15%;
   }
   
   .circle.red {
