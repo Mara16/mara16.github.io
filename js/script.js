@@ -18,10 +18,6 @@ elements.forEach(element => {
   element.appendChild(textContainer.cloneNode(true));
 });
 
-
-
-
-
 // for presentation purpose
 setTimeout(() => {
   elements.forEach(element => {
