@@ -1,0 +1,60 @@
+.terminal {
+    width: 100%;
+    background-color: #000;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .terminal-header {
+    display: flex;
+    background-color: #2d2c29;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .content {
+    overflow-y: scroll;
+    padding: .75rem;
+  }
+  
+  .circle {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    margin: .5rem;
+    position: relative;
+  }
+
+  .circle.red:hover::after {
+    content: 'X';
+    color: #8d1b13;
+    position: absolute;
+    left: 25%;
+  }
+
+  .circle.yellow:hover::after {
+    content: '--';
+    color: #a8712a;
+    position: absolute;
+    left: 25%;
+  }
+
+  .circle.green:hover::after {
+    content: '\005E';
+    color: #296018;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+  }
+  
+  .circle.red {
+    background-color: #e9685c;
+  }
+  
+  .circle.yellow {
+    background-color: #f5be4f;
+  }
+  
+  .circle.green {
+    background-color: #61c554;
+  }

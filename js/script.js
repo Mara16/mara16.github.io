@@ -1,7 +1,6 @@
 let elements = document.querySelectorAll('.rolling-text');
 
 elements.forEach(element => {
-  console.log(element)
   let innerText = element.innerText;
   element.innerHTML = '';
   

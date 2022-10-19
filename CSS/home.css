@@ -17,6 +17,7 @@ body {
   margin: 0;
   font-family: 'Agrandir', sans-serif;
   color: #292a5e;
+  width: 100%;
 }
 
 h2, h3, h4, h5, h6 {
@@ -36,7 +37,7 @@ ul.news{
 }
 
 ul.news li{
-  margin-bottom: .3rem;
+  margin-bottom: .4rem;
   font-family: 'Agrandir', sans-serif;
 }
 
@@ -45,8 +46,6 @@ ul.social {
   list-style-type: none;
   padding: 0;
 }
-
-
 
 ul img {
   width: 2rem;
@@ -66,7 +65,7 @@ ul img {
   font-size: 1rem;
 }
 
-.github{
+.github {
   fill: green;
 }
 
@@ -83,7 +82,7 @@ ul img {
   position: relative;
   text-align: right;
   overflow-y: scroll;
-  padding: 1.2rem;
+  padding: 1.5rem;
   width: 25%;
 }
 
@@ -122,22 +121,22 @@ ul img {
 .right {
   background-color: #553d86;
   color: #fff;
+  display: block;
   position: relative;
-  padding: 1.2rem;
+  padding: 1.5rem;
   width: 75%;
 }
 
 .row {
   display: flex;
-  height: 100vh;
 }
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 .social {
   bottom: 0;
@@ -181,5 +180,9 @@ ul img {
 
   .row {
     display: block;
+  }
+
+  ul.news li {
+    margin-bottom: 1rem;
   }
 }
