@@ -1,20 +1,26 @@
 .terminal {
+    font-family: 'JetBrains Mono';
     width: 100%;
     background-color: #000;
     border-radius: 1rem;
+    height: 400px;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    overflow-y: scroll;
   }
   
   .terminal-header {
-    display: flex;
     background-color: #2d2c29;
     border-radius: 1rem 1rem 0 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   .content {
     overflow-y: scroll;
-    padding: .75rem;
+    padding: 0 1.5rem;
   }
   
   .circle {
@@ -29,25 +35,24 @@
     content: '\0078';
     color: #8d1b13;
     position: absolute;
-    left: 25%;
-    bottom: 5%;
+    left: 20%;
+    bottom: -5%;
   }
 
   .circle.yellow:hover::after {
     content: '\2578';
     color: #a8712a;
     position: absolute;
-    right: 70%;
-    left: 33%;
-    bottom: 0%;
+    right: 5%;
+    bottom: -5%;
   }
 
   .circle.green:hover::after {
     content: '\02D0';
     color: #296018;
     position: absolute;
-    right: 40%;
-    bottom: 15%;
+    right: 20%;
+    bottom: 0%;
   }
   
   .circle.red {
