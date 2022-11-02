@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
- html, body {
-	 background-color: #f5f6f3;
-}
  .rolling-text {
 	 display: inline-block;
 	 font-family: 'Nunito', sans-serif;

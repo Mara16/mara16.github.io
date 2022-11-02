@@ -1,3 +1,15 @@
+html, body {
+  background-color: #f5f6f3;
+  overflow-x: hidden;
+}
+
+body {
+  color: #292a5e;
+  font-family: 'Agrandir', sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
 a {
   color: #fd7d78;
   text-decoration: none;
@@ -11,14 +23,6 @@ a:hover {
 
 audio::-webkit-media-controls-panel {
   background-color: #C9C3D7;
-}
-
-body {
-  color: #292a5e;
-  font-family: 'Agrandir', sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-  width: 100%;
 }
 
 h2, h3, h4, h5, h6 {
