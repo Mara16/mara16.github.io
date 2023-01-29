@@ -10,6 +10,10 @@ body {
   width: 100%;
 }
 
+main {
+  position: relative;
+}
+
 a {
   color: #fd7d78;
   text-decoration: none;
@@ -23,6 +27,89 @@ a:hover {
 
 audio::-webkit-media-controls-panel {
   background-color: #C9C3D7;
+}
+.hamburger {
+  top: 1rem;
+  left: 1rem;
+  display: none;
+  padding: .5rem;
+  box-shadow: 1px 1px 2px #553d86;
+}
+
+.hamburger div {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.mobile-header {
+  display: none;
+  background: #553b86;
+}
+
+.mobile-menu {
+  background: #fff;
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  left: -250px;
+  top: 0;
+  z-index: 2;
+}
+
+.mobile-menu-open {
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all .25s ease-in-out; /** Firefox **/
+  -o-transition: all .25s ease-in-out; /** Opera **/
+  left: 0px;
+  box-shadow: 0px 5px 10px #553d86;
+}
+
+.mobile-menu-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .75);
+  z-index: 1;
+}
+
+.mobile-menu-overlay.active {
+  display: block;
+}
+
+.mobile-menu li {
+  list-style-type: none;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu a {
+  font-size: 1.25rem;
+  color: #553d86;
+}
+
+.mobile-menu a:hover {
+  color: #fd7d78;
+}
+
+.mobile-menu div {
+  height: 1rem;
+  position: relative;
+}
+
+.mobile-menu button {
+  background: #553d86;
+  top: 1rem;
+  left: 1rem;
+  border: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #fff;
+  font-weight: 100;
 }
 
 h2, h3, h4, h5, h6 {
@@ -51,6 +138,10 @@ ul.social {
   padding: 0;
   position: sticky;
   bottom: 1rem;
+}
+
+ul.social.mobile-only {
+  display: none;
 }
 
 ul img {
@@ -154,14 +245,27 @@ ul img {
 
 
 .topnav {
-  overflow: hidden;
+  display: flex;
+}
+
+.topnav ul {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  width: 50%;
+  padding: 0;
+}
+
+.topnav ul:nth-child(2) {
+  justify-content: flex-end;
+}
+
+.topnav li {
+  display: block;
 }
   
 .topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  padding-left: 0%;
+  padding: 1rem;
   text-decoration: none;
   font-size: 17px;
 }
@@ -192,12 +296,20 @@ ul img {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .left {
-    margin-top: 1rem;
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-header {
+    display: block;
   }
 
   .left, .right {
     width: 100%;
+  }
+
+  .topnav {
+    display: none;
   }
 
   .row {
@@ -210,5 +322,9 @@ ul img {
 
   #scrollToTop {
     display: block;
+  }
+
+  ul.social.mobile-only {
+    display: flex;
   }
 }

@@ -28,10 +28,26 @@
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <main>
-        <div class="row">
-            <div class="left">
+            <![endif]-->
+        <div class="mobile-menu">
+            <ul>
+                <li><a>&#x2715</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="images/Ulloa_Mara_CV.pdf" target="_blank">CV</a></li>
+            </ul>
+        </div>
+        <main>
+            <div class="mobile-menu-overlay"></div>
+            <div class="mobile-header">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
                 <div class="pic"><img src="images/headshotBW.png" alt="headshot of Mara Ulloa" /></div>
                 <h1 class="rolling-text" href="#">Mara Ulloa</h1>
                 <p class="pronounciation">MAHR-ah &#8212; OOh-YO-a</p>
@@ -47,7 +63,7 @@
                 <p>mara.ulloa[at]northwestern.edu</p>
                 <p> &#x1F4CD; 2233 Tech Drive <br> Mudd Hall, 3536 <br> Evanston, IL 60208 </p>
                 <br>
-                <ul class="social">
+                <ul class="social mobile-only">
                     <li>
                         <a href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
                             <img src="images/Contact/LinkedIn.svg" alt="LinkedIn">
@@ -65,10 +81,36 @@
                     </li>
                 </ul>
             </div>
-            <div class="right">
+            <div id="about" class="right">
                 <div class="topnav">
-                    <a class="active" href="#home">About</a>
-                    <a href="images/Ulloa_Mara_CV.pdf" target="_blank">CV</a>
+                    <ul>
+                        <li>
+                            <a class="active" href="#home">About</a>
+                        </li>
+                        <li>
+                            <a href="images/Ulloa_Mara_CV.pdf" target="_blank">CV</a>
+                        </li>
+                        
+                    </ul>
+                    <ul>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
+                                    <img src="images/Contact/LinkedIn.svg" alt="LinkedIn">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Mara16" target="_blank">
+                                    <img class="github" src="images/Contact/GitHub.svg" alt="GitHub">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:mara.ulloa@northwestern.edu">
+                                    <img src="images/Contact/Email.svg" alt="Email">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
                 </div>
 
                 <h2>About</h2>
@@ -84,7 +126,7 @@
                     working alongside a Chicago non-profit whose mission is to introduce youth from underserved 
                     backgrounds to coding through free educational resources.
                 </p>
-                <h2>News</h2>
+                <h2 id="news">News</h2>
                 <div class="terminal">
                     <div class="terminal-header">
                         <div class="circle red"></div>

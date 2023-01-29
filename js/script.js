@@ -30,3 +30,33 @@ elements.forEach(element => {
     element.classList.remove('play');
   });
 });
+
+// mobile menu
+const hamburger = document.getElementsByClassName('hamburger')[0]
+const mobileMenu = document.getElementsByClassName('mobile-menu')[0]
+const mobileMenuOverlay = document.getElementsByClassName('mobile-menu-overlay')[0]
+const menuClose = document.getElementsByClassName('mobile-menu-close')[0]
+
+const menuOptions = document.querySelectorAll('.mobile-menu a')
+menuOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    hamburger.click();
+  })
+})
+
+hamburger.addEventListener('click', () => {
+  toggleMenu()
+  toggleOverlay()
+})
+
+menuClose.addEventListener('click', () => {
+  toggleMenu()
+})
+
+function toggleMenu() {
+  mobileMenu.classList.toggle('mobile-menu-open')
+}
+
+function toggleOverlay() {
+  mobileMenuOverlay.classList.toggle('active')
+}
