@@ -35,7 +35,6 @@ elements.forEach(element => {
 const hamburger = document.getElementsByClassName('hamburger')[0]
 const mobileMenu = document.getElementsByClassName('mobile-menu')[0]
 const mobileMenuOverlay = document.getElementsByClassName('mobile-menu-overlay')[0]
-const menuClose = document.getElementsByClassName('mobile-menu-close')[0]
 
 const menuOptions = document.querySelectorAll('.mobile-menu a')
 menuOptions.forEach(option => {
@@ -47,10 +46,6 @@ menuOptions.forEach(option => {
 hamburger.addEventListener('click', () => {
   toggleMenu()
   toggleOverlay()
-})
-
-menuClose.addEventListener('click', () => {
-  toggleMenu()
 })
 
 function toggleMenu() {
