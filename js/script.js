@@ -46,6 +46,10 @@ menuOptions.forEach(option => {
 hamburger.addEventListener('click', () => {
   toggleMenu()
   toggleOverlay()
+
+  // prevent scrolling on mobile-menu when open
+  const body = document.getElementsByTagName('body')[0]
+  body.classList.toggle('mobile-menu-open')
 })
 
 function toggleMenu() {
