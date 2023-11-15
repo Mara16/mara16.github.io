@@ -35,10 +35,21 @@
                 <li><a>&#x2715</a></li>
                 <li><a href="#about">Bio</a></li>
                 <li><a href="#news">News</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="images/Ulloa_Mara_CV.pdf" target="_blank">CV</a></li>
             </ul>
         </div>
         <main>
+            <div class="events-overlay-container">
+                <div class="events-overlay"></div>
+                <div class="events-overlay-inner">
+                    <div class="events-button-container">
+                        <button></button>
+                    </div>
+                    <div class="events-description-container"></div>
+                    <div class="events-image-container"></div>
+                </div>
+            </div>
             <div class="mobile-menu-overlay"></div>
             <div class="mobile-header">
                 <div class="hamburger">
@@ -49,52 +60,23 @@
             </div>
             <div class="row">
                 <div class="left">
-                <div class="pic"><img src="images/headshotBW.png" alt="headshot of Mara Ulloa" /></div>
-                <h1 class="rolling-text" href="#">Mara Ulloa</h1>
-                <p class="pronounciation">MAHR-ah &#8212; OOh-YO-a</p>
-
-                <audio controls>
-                    <source src="audio/name_.ogg" type="audio/ogg">
-                    <source src="audio/name_.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-
-                <p>PhD Student</p>
-                <p>Department of Computer Science <br> Northwestern University</p>
-                <p>mara [dot] ulloa [at] northwestern [dot] edu</p>
-                <p> &#x1F4CD; 2233 Tech Drive <br> Office 3202 <br> Evanston, IL 60208 </p>
-                <br>
-                <ul class="social mobile-only">
-                    <li>
-                        <a href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
-                            <img src="images/Contact/LinkedIn.svg" alt="LinkedIn">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Mara16" target="_blank">
-                            <img class="github" src="images/Contact/GitHub.svg" alt="GitHub">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://mobile.twitter.com/mara_ulloa__" target="_blank">
-                            <img src="images/Contact/twitter.svg" alt="twitter">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="about" class="right">
-                <div class="topnav">
-                    <ul>
-                        <li>
-                            <a class="active" href="#home">Bio</a>
-                        </li>
-                        <li>
-                            <a href="images/Ulloa_Mara_CV.pdf" target="_blank">CV</a>
-                        </li>
-                        
-                    </ul>
-                    <ul>
-                        <ul class="social">
+                    <div class="left-fixed">
+                        <div class="pic"><img src="images/headshotBW.png" alt="headshot of Mara Ulloa" /></div>
+                        <h1 class="rolling-text" href="#">Mara Ulloa</h1>
+                        <p class="pronounciation">MAHR-ah &#8212; OOh-YO-a</p>
+    
+                        <audio controls>
+                            <source src="audio/name_.ogg" type="audio/ogg">
+                            <source src="audio/name_.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        </audio>
+    
+                        <p>PhD Student</p>
+                        <p>Department of Computer Science <br> Northwestern University</p>
+                        <p><a href="mailto:mara.ulloa@u.northwestern.edu">mara.ulloa@u.northwestern.edu</a></p>
+                        <p> &#x1F4CD; 2233 Tech Drive <br> Office 3202 <br> Evanston, IL 60208 </p>
+                        <br>
+                        <ul class="social mobile-only">
                             <li>
                                 <a href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
                                     <img src="images/Contact/LinkedIn.svg" alt="LinkedIn">
@@ -102,7 +84,7 @@
                             </li>
                             <li>
                                 <a href="https://github.com/Mara16" target="_blank">
-                                    <img src="images/Contact/GitHub.svg" alt="GitHub">
+                                    <img class="github" src="images/Contact/GitHub.svg" alt="GitHub">
                                 </a>
                             </li>
                             <li>
@@ -111,8 +93,44 @@
                                 </a>
                             </li>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
+                <div id="about" class="right">
+                    <div class="topnav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#home">Bio</a>
+                            </li>
+                            <li>
+                                <a href="#news">News</a>
+                            </li>
+                            <li>
+                                <a href="#events">Events</a>
+                            </li>
+                            <li>
+                                <a href="images/Ulloa_Mara_CV.pdf" target="_blank">CV</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
+                                        <img src="images/Contact/LinkedIn.svg" alt="LinkedIn">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Mara16" target="_blank">
+                                        <img src="images/Contact/GitHub.svg" alt="GitHub">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mobile.twitter.com/mara_ulloa__" target="_blank">
+                                        <img src="images/Contact/twitter.svg" alt="twitter">
+                                    </a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
 
                 <h2>Bio</h2>
 
@@ -139,9 +157,9 @@
                     </div>
                     <div class="content">
                         <ul class="news">
-                            <li>&#128105;&#127995;&#8205;&#127979; 10/2023 Will present at the <a href="https://cscw.acm.org/2023/"target="_blank">Computer-Supported Cooperative Work And Social Computing (CSCW)
-                            </a> workshop on <a href="https://cscw-user-ai-auditing.github.io/">Supporting User Engagement in Testing, Auditing, and Contesting AI</a> in Minneapolis, MN</li>
-                            <li>&#128105;&#127995;&#8205;&#127979; 10/2023 Will serve as a JEDI Ambassador at <a href="https://www.ubicomp.org/ubicomp-iswc-2023/"target="_blank">UbiComp/ISWC conference</a> in Canc&uacute;n, Mexico</li>
+                            <li>&#128105;&#127995;&#8205;&#127979; 11/2023 Attended the <a href="https://www.law.northwestern.edu/research-faculty/events/conferences/gender-ai/"target="_blank">Gender and Intersectional Bias in Artificial Intelligence Conference</a> in Chicago, IL</li>
+                            <li>&#128105;&#127995;&#8205;&#127979; 10/2023 Presented at the <a href="https://cscw.acm.org/2023/"target="_blank">Computer-Supported Cooperative Work And Social Computing (CSCW)</a> workshop on <a href="https://cscw-user-ai-auditing.github.io/">Supporting User Engagement in Testing, Auditing, and Contesting AI</a> in Minneapolis, MN</li>
+                            <li>&#128105;&#127995;&#8205;&#127979; 10/2023 Served as a JEDI Ambassador at <a href="https://www.ubicomp.org/ubicomp-iswc-2023/"target="_blank">UbiComp/ISWC conference</a> in Canc&uacute;n, Mexico</li>
                             <li>&#128105;&#127995;&#8205;&#127979; 07/2023 Served as a panelist in the <a href="https://www.neiu.edu/academics/our-centers-and-programs/mcnair-scholars-program"target="_blank">NEIU SCSE, TRIO, and McNair</a> Graduate School Panel</li>
                             <li>&#128105;&#127995;&#8205;&#127979; 06/2023 Served as a volunteer at the <a href="https://idc.acm.org/2023/"target="_blank">Interaction Design for Children</a> conference in Chicago, IL</li>
                             <li>&#127891; 06/2023 Received a Master of Science (MS) degree in Computer Science from <a href="https://www.mccormick.northwestern.edu/computer-science/" target="_blank">Northwestern</a></li>
@@ -174,14 +192,25 @@
                         </ul>
                     </div>
                 </div>
+                <h2 id="events">Events</h2>
+                <div class="events">
+                    <ul>
+                        <li data-src="images/q+a.jpeg" style="background: url(images/q+a.jpeg); background-size: cover; background-repeat: no-repeat;" data-description="Discussing my partipation in the Graduate Engagement Opportunity (GEO) program"></li>
+                        <li data-src="images/wac.png" style="background: url(images/wac.png); background-size: cover; background-repeat: no-repeat;" data-description="Mentoring local Chicago youth on CS Education"></li>
+                        <li data-src="images/cra_wp.jpg" style="background: url(images/cra_wp.jpg); background-size: cover; background-repeat: no-repeat;" data-description="Participating in CRA-WP Grad Cohort for Women in San Francisco, CA"></li>
+                        <li data-src="images/ubicomp.jpg" style="background: url(images/ubicomp.jpg); background-size: cover; background-repeat: no-repeat;" data-description="Serving as JEDI Ambassador at Ubicomp/ISWC 2023 in Canc&uacute;n, Mexico"></li>
+                        <li data-src="images/neiu_alumni_panel.jpg" style="background: url(images/neiu_alumni_panel.jpg); background-size: cover; background-repeat: no-repeat;" data-description="Served as a panelist in the NEIU Alumni Forum 2023"></li>
+                    </ul>
+                </div>
                 <button id="scrollToTop">&#11014;&#65039;</button>
                 <div class="footer-content">
-                    <p>Last updated Summer 2023 <br> &copy;Mara Ulloa </p>
+                    <p>&copy;Mara Ulloa </p>
                 </div>
             </div>
         </div>
     </main>
     <script src="js/script.js"></script>
     <script src="js/scroll_to_top.js"></script>
+    <script src="js/events.js"></script>
 </body>
 </html>

@@ -1,13 +1,18 @@
-html, body {
+html,
+body {
   background-color: #f5f6f3;
   overflow-x: hidden;
 }
 
 body {
   color: #292a5e;
-  font-family: 'Agrandir', sans-serif;
+  font-family: "Agrandir", sans-serif;
   margin: 0;
   width: 100%;
+}
+
+.scroll-lock {
+  overflow-y: hidden;
 }
 
 body.mobile-menu-open {
@@ -30,13 +35,13 @@ a:hover {
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #C9C3D7;
+  background-color: #c9c3d7;
 }
 .hamburger {
   top: 1rem;
   left: 1rem;
   display: none;
-  padding: .5rem;
+  padding: 0.5rem;
   box-shadow: 1px 1px 2px #553d86;
 }
 
@@ -63,10 +68,10 @@ audio::-webkit-media-controls-panel {
 }
 
 .mobile-menu-open {
-  transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out; /** Chrome & Safari **/
-  -moz-transition: all .25s ease-in-out; /** Firefox **/
-  -o-transition: all .25s ease-in-out; /** Opera **/
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 0.25s ease-in-out; /** Firefox **/
+  -o-transition: all 0.25s ease-in-out; /** Opera **/
   left: 0px;
   box-shadow: 0px 5px 10px #553d86;
 }
@@ -78,7 +83,7 @@ audio::-webkit-media-controls-panel {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, .75);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
 
@@ -116,24 +121,27 @@ audio::-webkit-media-controls-panel {
   font-weight: 100;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 2rem;
-
 }
 
 p {
   line-height: 1.5rem;
 }
 
-ul.news{
+ul.news {
   list-style: none;
   padding-left: 0;
 }
 
-ul.news li{
-  margin-bottom: .4rem;
+ul.news li {
+  margin-bottom: 0.4rem;
 }
 
 ul.social {
@@ -157,7 +165,7 @@ ul img {
   float: left;
   padding: 10px;
 }
-  
+
 .footer-content {
   bottom: 0;
   text-align: center;
@@ -182,13 +190,18 @@ ul img {
   position: relative;
   text-align: right;
   overflow-y: scroll;
-  padding: 1.5rem;
   width: 25%;
+}
+
+.left-fixed {
+  padding: 1.5rem;
+  position: fixed;
+  width: inherit;
 }
 
 .name {
   color: #fd7d78;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 3rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -199,7 +212,7 @@ ul img {
   justify-content: center;
   padding: 1rem;
   background-image: radial-gradient(rgb(87, 51, 51) 10%, transparent 11%),
-  radial-gradient(rgb(104, 18, 18) 10%, transparent 11%);
+    radial-gradient(rgb(104, 18, 18) 10%, transparent 11%);
   background-size: 10px 10px;
   background-position: 0 0, 90px 90px;
   background-repeat: repeat;
@@ -212,9 +225,9 @@ ul img {
 .pronounciation {
   color: #b8b8b8;
   font-style: italic;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding-top: 0%;
-  margin:0;
+  margin: 0;
   border-collapse: collapse;
 }
 
@@ -247,7 +260,6 @@ ul img {
   width: 100%;
 }
 
-
 .topnav {
   display: flex;
 }
@@ -267,18 +279,18 @@ ul img {
 .topnav li {
   display: block;
 }
-  
+
 .topnav a {
   padding: 1rem;
   text-decoration: none;
   font-size: 17px;
 }
-  
+
 .topnav a:hover {
   color: #fff;
   text-decoration: underline solid #fff 3px;
 }
-  
+
 .topnav a.active {
   color: #fff;
 }
@@ -298,6 +310,84 @@ ul img {
   width: 3.25rem;
 }
 
+.events ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+
+.events li {
+  border: 1px solid #fff;
+  cursor: pointer;
+  flex: 0 1 calc(50% - 10px);
+  list-style-type: none;
+  margin: 5px;
+  min-height: 250px;
+}
+
+.events-overlay-inner img {
+  width: 100%;
+}
+
+.events-overlay-container {
+  align-items: center;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.events-overlay-container button {
+  background: url("../images/close.svg") no-repeat 50% 50%;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  height: 1rem;
+  width: 1rem;
+}
+
+.events-overlay-inner {
+  background: #fff;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+}
+
+.events-overlay-container.active {
+  display: flex;
+}
+
+.events-overlay-container p {
+  color: #000;
+}
+
+.events-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.events-button-container {
+  display: flex;
+  justify-content: right;
+  padding: 0.5rem;
+}
+
+.events-image-container {
+  max-width: 80vw;
+  height: calc(100vh - 50%);
+  width: calc(100vw - 150px);
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .hamburger {
@@ -308,8 +398,13 @@ ul img {
     display: block;
   }
 
-  .left, .right {
+  .left,
+  .right {
     width: 100%;
+  }
+
+  .left-fixed {
+    position: unset;
   }
 
   .topnav {
@@ -330,5 +425,13 @@ ul img {
 
   ul.social.mobile-only {
     display: flex;
+  }
+
+  .events-overlay-inner {
+    width: 85%;
+  }
+
+  .events-image-container {
+    width: 100%;
   }
 }
