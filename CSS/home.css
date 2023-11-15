@@ -15,6 +15,10 @@ body {
   overflow-y: hidden;
 }
 
+body.mobile-menu-open {
+  height: 100vh;
+}
+
 main {
   position: relative;
 }
